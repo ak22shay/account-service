@@ -10,9 +10,9 @@ name: account-service maven build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "release/deployment" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "release/deployment" ]
 
 jobs:
   build:
