@@ -54,6 +54,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .  # Set context to the current directory, not the Dockerfile
-          file: .github/workflows/Dockerfile  # Specify the Dockerfile path (assuming it is copied to target/ folder)
+          file: Dockerfile  # Specify the Dockerfile path (assuming it is copied to target/ folder)
           push: true
           tags: ak22shay/iba-${{ env.ARTIFACT_ID }}:${{ env.VERSION }}
