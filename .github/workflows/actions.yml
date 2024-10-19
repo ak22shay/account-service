@@ -53,6 +53,6 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
-          context: .
+          context: Dockerfile
           push: true
           tags: ak22shay/iba-${{ env.ARTIFACT_ID }}:${{ env.VERSION }}
