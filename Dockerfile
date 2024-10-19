@@ -2,7 +2,7 @@
 FROM eclipse-temurin:21-jdk-alpine
 
 # Copy the JAR file from the target folder into the container
-COPY target/${artifactId}-${version}.jar iba-account-service.jar
+COPY target/iba-account-service.jar iba-account-service.jar
 
 # Expose the port that the Spring Boot app runs on
 EXPOSE 8081

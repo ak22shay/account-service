@@ -131,6 +131,7 @@
 				</executions>
 			</plugin>
 		</plugins>
+		<finalName>iba-account-service</finalName>
 	</build>
 
 </project>
