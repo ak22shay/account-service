@@ -1,10 +1,10 @@
 package com.iba.core.account_service.util;
 
 import com.iba.core.account_service.document.Account;
+import com.iba.core.account_service.response.AccountRequest;
 import com.iba.core.account_service.response.AccountResponse;
 import org.modelmapper.ModelMapper;
 
-import java.util.Optional;
 
 
 public class ObjectMapper {
@@ -13,5 +13,9 @@ public class ObjectMapper {
 
     public static AccountResponse  mapAccountToAccountResponse(Account account) {
         return modelMapper.map(account, AccountResponse.class);
+    }
+
+    public static Account mapAccountRequestToAccount(AccountRequest accountRequest){
+        return modelMapper.map(accountRequest, Account.class);
     }
 }

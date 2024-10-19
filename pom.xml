@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.iba.core</groupId>
 	<artifactId>account-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>account-service</name>
 	<description>Investment accounts services</description>
 	<url/>
@@ -67,11 +67,11 @@
 			<artifactId>modelmapper</artifactId>
 			<version>3.1.1</version>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>com.hazelcast</groupId>-->
-<!--			<artifactId>hazelcast-spring</artifactId>-->
-<!--			<version>5.2.4</version>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>com.hazelcast</groupId>
+			<artifactId>hazelcast-spring</artifactId>
+			<version>5.2.4</version>
+		</dependency>
 
 	</dependencies>
 	<dependencyManagement>
